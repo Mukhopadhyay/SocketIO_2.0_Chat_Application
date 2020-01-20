@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.IO 2.0 Chat Application</title>
+
+    <link rel="stylesheet" href="/public/stylesheets/index.css">
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="/public/scripts/client.js"></script>
+    <script defer src="/public/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div id="messageBox">
+
+        </div>
+    </div>
+    <div class="container">
+        <form id="chatForm" autocomplete="off">
+            <input type="text" class="form-control" id="message" placeholder="Enter your message...">
+            <button class="btn btn-outline-primary" id="submitButton">Send</button>
+        </form>
+    </div>
+    <div class="container" id="member-holder">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Active users</h5>
+                <div id="active-members" class="card-text">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

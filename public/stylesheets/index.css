@@ -1,0 +1,11 @@
+#messageBox {
+    height: 20rem;
+    overflow-y: auto;
+}
+#submitButton {
+    margin-top: 1rem;
+}
+.connected {
+    background-color: red;
+    font-weight: bold;
+}
