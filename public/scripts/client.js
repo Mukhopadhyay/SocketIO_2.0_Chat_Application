@@ -1,4 +1,4 @@
-const socket = io.connect('http://socketio-2-chat-application.herokuapp.com');
+const socket = io.connect('http://socketio-2-chat-application.herokuapp.com:8000');
 
 const messageBox = document.getElementById('messageBox');
 const chatForm = document.getElementById('chatForm');
