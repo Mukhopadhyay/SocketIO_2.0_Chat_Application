@@ -1,4 +1,4 @@
-const socket = io.connect();
+const socket = io.connect('https://socketio-2-chat-application.herokuapp.com:8000');
 
 //'https://socketio-2-chat-application.herokuapp.com:8000'
 
