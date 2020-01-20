@@ -15,6 +15,7 @@ app.get('/about', (req, res, next) => {
 
 app.use(cors());
 
+app.use('/socket', express.static(path.join(__dirname, 'node_modules/socket.io-client/dist')));
 app.use('/public', express.static(path.join(__dirname, '/public')));
 app.use('/public', express.static(path.join(__dirname, '/node_modules/bootstrap/dist')));
 app.use('/public', express.static(path.join(__dirname, '/node_modules/jquery/dist')));
